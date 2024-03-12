@@ -1,0 +1,46 @@
+# Arquivos temporários
+[Oo]bj/
+[Bb]in/
+[Dd]ebug/
+[Rr]elease/
+.vs/
+
+# # Arquivos de compilação
+# *.exe
+# *.pdb
+# *.dll
+# *.manifest
+# *.res
+# *.pch
+# *.ilk
+# *.obj
+# *.lib
+# *.idb
+# *.exp
+# *.suo
+# *.cache
+# *.ilk
+# *.ncb
+
+# # Arquivos de projeto
+# *.sln
+# *.vcxproj
+# *.vcxproj.filters
+# *.vcproj
+# *.user
+# *.vcxproj.user
+# *.suo
+# *.opensdf
+
+# # Arquivos de log
+# *.log
+
+# # Diretório de saída de análise de código
+# *.code-workspace
+
+# # Arquivos de usuário do Visual Studio
+# .vs/
+
+# # Arquivos de registro e caches do Windows
+# Thumbs.db
+# Desktop.ini
