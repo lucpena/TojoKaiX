@@ -483,7 +483,6 @@ void D3DClass::SetBackBufferRenderTarget()
 	return;
 }
 
-
 void D3DClass::ResetViewport()
 {
 	// Set the viewport.
