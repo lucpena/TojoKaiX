@@ -1,4 +1,4 @@
-#include "colorshaderclass.h"
+#include "ColorShaderClass.h"
 
 ColorShaderClass::ColorShaderClass()
 {
@@ -24,7 +24,6 @@ bool ColorShaderClass::Initialize(ID3D11Device* device, HWND hwnd)
 	wchar_t vsFilename[128];
 	wchar_t psFilename[128];
 	int error;
-
 
 	// Set the filename of the vertex shader.
 	error = wcscpy_s(vsFilename, 128, L"../TojoKaiX Engine/color.vs");
@@ -63,7 +62,6 @@ bool ColorShaderClass::Render(ID3D11DeviceContext* deviceContext, int indexCount
 {
 	bool result;
 
-
 	// Set the shader parameters that it will use for rendering.
 	result = SetShaderParameters(deviceContext, worldMatrix, viewMatrix, projectionMatrix);
 	if (!result)
@@ -86,7 +84,6 @@ bool ColorShaderClass::InitializeShader(ID3D11Device* device, HWND hwnd, WCHAR* 
 	D3D11_INPUT_ELEMENT_DESC polygonLayout[2];
 	unsigned int numElements;
 	D3D11_BUFFER_DESC matrixBufferDesc;
-
 
 	// Initialize the pointers this function will use to null.
 	errorMessage = 0;
@@ -237,7 +234,6 @@ void ColorShaderClass::OutputShaderErrorMessage(ID3D10Blob* errorMessage, HWND h
 	char* compileErrors;
 	unsigned long long bufferSize, i;
 	ofstream fout;
-
 
 	// Get a pointer to the error message text buffer.
 	compileErrors = (char*)(errorMessage->GetBufferPointer());

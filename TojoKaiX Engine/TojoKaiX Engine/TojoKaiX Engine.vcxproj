@@ -127,26 +127,34 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="applicationclass.h" />
-    <ClInclude Include="cameraclass.h" />
-    <ClInclude Include="colorshaderclass.h" />
+    <ClInclude Include="ApplicationClass.h" />
+    <ClInclude Include="CameraClass.h" />
+    <ClInclude Include="ColorShaderClass.h" />
     <ClInclude Include="framework.h" />
-    <ClInclude Include="inputclass.h" />
-    <ClInclude Include="modelclass.h" />
+    <ClInclude Include="InputClass.h" />
+    <ClInclude Include="LightClass.h" />
+    <ClInclude Include="LightShaderClass.h" />
+    <ClInclude Include="ModelClass.h" />
     <ClInclude Include="Resource.h" />
-    <ClInclude Include="systemclass.h" />
+    <ClInclude Include="SystemClass.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="TextureClass.h" />
+    <ClInclude Include="TextureShaderClass.h" />
     <ClInclude Include="TojoKaiX Engine.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="applicationclass.cpp" />
-    <ClCompile Include="cameraclass.cpp" />
-    <ClCompile Include="colorshaderclass.cpp" />
-    <ClCompile Include="d3dclass.cpp" />
-    <ClCompile Include="d3dclass.h" />
-    <ClCompile Include="inputclass.cpp" />
-    <ClCompile Include="modelclass.cpp" />
-    <ClCompile Include="systemclass.cpp" />
+    <ClCompile Include="ApplicationClass.cpp" />
+    <ClCompile Include="CameraClass.cpp" />
+    <ClCompile Include="ColorsSaderClass.cpp" />
+    <ClCompile Include="D3DClass.cpp" />
+    <ClCompile Include="D3DClass.h" />
+    <ClCompile Include="InputClass.cpp" />
+    <ClCompile Include="LightClass.cpp" />
+    <ClCompile Include="LightShaderClass.cpp" />
+    <ClCompile Include="ModelClass.cpp" />
+    <ClCompile Include="SystemClass.cpp" />
+    <ClCompile Include="TextureClass.cpp" />
+    <ClCompile Include="TextureShaderClass.cpp" />
     <ClCompile Include="TojoKaiX Engine.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -159,6 +167,10 @@
   <ItemGroup>
     <None Include="color.vs" />
     <None Include="color.ps" />
+    <None Include="light.ps" />
+    <None Include="light.vs" />
+    <None Include="texture.ps" />
+    <None Include="texture.vs" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

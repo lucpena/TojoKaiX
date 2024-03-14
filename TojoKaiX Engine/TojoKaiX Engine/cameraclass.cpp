@@ -1,4 +1,4 @@
-#include "cameraclass.h"
+#include "CameraClass.h"
 
 CameraClass::CameraClass()
 {
@@ -55,7 +55,6 @@ void CameraClass::Render()
 	XMVECTOR upVector, positionVector, lookAtVector;
 	float yaw, pitch, roll;
 	XMMATRIX rotationMatrix;
-
 
 	// Setup the vector that points upwards.
 	up.x = 0.0f;

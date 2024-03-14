@@ -1,3 +1,5 @@
+// texture.vs
+
 // Globals
 cbuffer MatrixBuffer
 {
@@ -10,30 +12,31 @@ cbuffer MatrixBuffer
 struct VertexInputType
 {
     float4 position : POSITION;
-    float4 color : COLOR;
+    float2 tex : TEXCOORD0;
 };
 
 struct PixelInputType
 {
     float4 position : SV_POSITION;
-    float4 color : COLOR;
+    float2 tex : TEXCOORD0;
 };
 
-// Shader
-PixelInputType ColorVertexShader(VertexInputType input)
+// Vertex Shader
+PixelInputType TextureVertexShader(VertexInputType input)
 {
     PixelInputType output;
+    
 
-    // Change the position vector to be 4 units for proper matrix calculations
+    // Change the position vector to be 4 units for proper matrix calculations.
     input.position.w = 1.0f;
 
-    // Calculate the position of the vertex against the world, view and projection matricex
+    // Calculate the position of the vertex against the world, view, and projection matrices.
     output.position = mul(input.position, worldMatrix);
     output.position = mul(output.position, viewMatrix);
     output.position = mul(output.position, projectionMatrix);
 
-    // Store the input color for the pixel shader to use
-    output.color = input.color;
+    // Store the texture coordinates for the pixel shader.
+    output.tex = input.tex;
 
     return output;
 }
